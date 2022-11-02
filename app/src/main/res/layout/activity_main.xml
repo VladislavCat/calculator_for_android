@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textViewCalc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:textAlignment="viewEnd"
+        android:textColor="#2C2929"
+        android:textSize="52sp" />
+
+    <Button
+        android:id="@+id/number_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCalc"
+        android:layout_toEndOf="@id/operation_sum"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:onClick="clickOnNumber"
+        android:text="@string/_1"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/number_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_1"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/operation_div"
+        android:onClick="clickOnNumber"
+        android:text="@string/_2"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/number_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_2"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/operation_div"
+        android:onClick="clickOnNumber"
+        android:text="@string/_3"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/number_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/number_3"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/parenthesisClose"
+        android:onClick="clickOnNumber"
+        android:text="@string/_4"
+        android:textSize="42sp" />
+
+
+    <Button
+        android:id="@+id/number_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_4"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="70dp"
+        android:layout_toEndOf="@id/number_12"
+        android:onClick="clickOnNumber"
+        android:text="@string/_5"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/number_6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCalc"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/number_1"
+        android:onClick="clickOnNumber"
+        android:text="@string/_6"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/number_7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_6"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/number_2"
+        android:onClick="clickOnNumber"
+        android:text="@string/_7"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/number_8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_7"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/number_3"
+        android:onClick="clickOnNumber"
+        android:text="@string/_8"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/number_9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_8"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/number_4"
+        android:onClick="clickOnNumber"
+        android:text="@string/_9"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/number_10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/number_9"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/number_5"
+        android:onClick="clickOnNumber"
+        android:text="@string/_0"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/number_11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parenthesisOpen"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="@string/comma"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/parenthesisOpen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operation_pow"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:onClick="clickOnOpenParenthesisButton"
+        android:text="@string/ParenthesisOpen"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/parenthesisClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operation_div"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/parenthesisOpen"
+        android:onClick="clickOnCloseParenthesisButton"
+        android:text="@string/parenthesisClose"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@id/textViewCalc"
+        android:layout_marginTop="70dp"
+        android:onClick="clickOnBackSpaceButton"
+        android:text="@string/ce"
+        android:textSize="52sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@id/button4"
+        android:layout_marginTop="70dp"
+        android:layout_marginRight="30dp"
+        android:onClick="clickOnDeleteButton"
+        android:text="@string/ac"
+        android:textSize="52sp" />
+
+    <Button
+        android:id="@+id/operation_sub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCalc"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:onClick="clickOnArithmeticOperation"
+        android:text="@string/subtraction"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/operation_sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCalc"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_toEndOf="@id/operation_sub"
+        android:onClick="clickOnArithmeticOperation"
+        android:text="@string/sum"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/operation_multiple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operation_sub"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:onClick="clickOnArithmeticOperation"
+        android:text="@string/multiple"
+        android:textSize="42sp" />
+
+
+    <Button
+        android:id="@+id/operation_div"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operation_sum"
+        android:layout_toEndOf="@id/operation_multiple"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:onClick="clickOnArithmeticOperation"
+        android:text="@string/division"
+        android:textSize="42sp" />
+
+    <Button
+        android:id="@+id/operation_pow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/operation_multiple"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:onClick="clickOnArithmeticOperation"
+        android:text="@string/pov"
+        android:textSize="42sp" />
+
+
+    <Button
+        android:id="@+id/number_12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/parenthesisClose"
+        android:layout_toEndOf="@id/number_11"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="30dp"
+        android:onClick="clickOnEqualsButt"
+        android:text="@string/equals"
+        android:textSize="42sp" />
+
+
+</RelativeLayout>
