@@ -6,8 +6,6 @@ import com.example.myapplication.parenthesis.CheckCorrectParenthesis;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.List;
 
 public class CheckCorrectParenthesisTest {
 
